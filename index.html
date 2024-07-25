@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through Sri Aman - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+        }
+        header {
+            position: relative;
+            height: 100vh;
+            background: url('home-header.jpeg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            z-index: 1;
+            animation: fadeInDown 1.5s ease-out;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            transition: background 0.3s;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            position: relative;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: white;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s;
+        }
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .content-container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+        }
+        .card h2 {
+            margin: 0 0 20px 0;
+            font-size: 2.5em;
+        }
+        .card p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .img-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .img-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .img-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.5s, transform 0.5s;
+            transform: translateY(20px);
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .img-container:hover .overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Sri Aman</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="culture.html">Culture</a>
+            <a href="history.html">History</a>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="card">
+            <h2>Discover the Hidden Gems of Sri Aman</h2>
+            <div class="img-container">
+                <img src="homepage1.jpg" alt="Beautiful landscape of Sri Aman">
+            </div>
+            <p>Welcome to Journey Through Sri Aman, your ultimate guide to information on Sri Aman. Join us as we embark on a journey to uncover the popular destinations, immerse in diverse cultures, and create unforgettable memories. Let Journey Through Sri Aman be your compass to extraordinary adventures.</p>
+        </div>
+        <div class="card">
+            <h2>About JourneyThroughSriAman Website</h2>
+            <p>This website assignment fulfills the requirements for the IMD318 Group Project. Our topic was to create a website for districts in Kuching, and we have chosen to focus on the Sri Aman district.</p>
+            <div class="img-container">
+                <img src="homepage2.jpg" alt="Quote by Henry Miller">
+                <div class="overlay">“One’s destination is never a place, but a new way of seeing things.” - Henry Miller</div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Get to Know Sri Aman</h2>
+            <p>Discover the rich cultural heritage, scenic landscapes, and vibrant community of Sri Aman. Whether you're a traveler seeking adventure or a culture enthusiast eager to learn, Sri Aman has something for everyone.</p>
+        </div>
+        <div class="card">
+            <h2>Meet Our Team</h2>
+            <p>Our team is made up of final year university students currently studying in the School of Information Science, College of Computing, Informatics, and Mathematics. With our experience in web design and development, we have worked together to bring our vision to life through this website. From initial concept to the final product, we are dedicated to delivering high-quality results that exceed your expectations.</p>
+            <ul>
+                <li>Ashley Sabrina</li>
+                <li>Aina Syahirah</li>
+                <li>Joyce Celyne</li>
+                <li>Niqkhelzie Iszam</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© We declare that the work in this website was carried out as an assignment in accordance with the regulations of Universiti Teknologi MARA. It is original and is the results of our own work, unless otherwise indicated or acknowledged as referenced work.</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+    </footer>
+</body>
+</html>

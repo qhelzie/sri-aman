@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through Sri Aman - About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+        header {
+            position: relative;
+            height: 60vh;
+            background: url('about header.jfif') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            z-index: 1;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            transition: background 0.3s;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: white;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s;
+        }
+
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .content-container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .content-container h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content-container p, .content-container ul {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content-container ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .content-container ul li {
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Sri Aman</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="culture.html">Culture</a>
+            <a href="history.html">History</a>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="section">
+            <h2>Historical Background</h2>
+            <p>Colonial Era: The town's history is closely linked to the Brooke dynasty, a series of White Rajahs who ruled Sarawak from 1841 to 1946. The town was originally named Simanggang and was a strategic location during the Brooke administration.</p>
+            <p>Peace Declaration: In 1973, the town was renamed Sri Aman, which means "town of peace," to commemorate the peace declaration signed between the Malaysian government and communist insurgents, marking the end of the insurgency in Sarawak.</p>
+        </div>
+        <div class="section">
+            <h2>Geographical Location</h2>
+            <p>Location: Sri Aman is situated on the banks of the Batang Lupar River, about 193 kilometers southeast of Kuching, the state capital of Sarawak.</p>
+            <p>Geography: The area is known for its lush rainforests, rivers, and diverse wildlife.</p>
+        </div>
+        <div class="section">
+            <h2>Cultural and Demographic Aspects</h2>
+            <p>Ethnic Diversity: The population is ethnically diverse, with significant communities of Iban, Malay, Chinese, and other indigenous groups.</p>
+            <p>Languages: Multiple languages are spoken, including Iban, Malay, Mandarin, and English.</p>
+            <p>Festivals: The town is known for its vibrant cultural festivals, such as Gawai Dayak, celebrated by the Iban community, and the Tidal Bore Festival, which attracts visitors to witness the natural phenomenon on the Batang Lupar River.</p>
+        </div>
+        <div class="section">
+            <h2>Economy</h2>
+            <p>Agriculture: The economy of Sri Aman is primarily based on agriculture, with major crops including oil palm, rubber, and pepper.</p>
+            <p>Tourism: Tourism is also an important sector, with attractions such as the Batang Ai National Park and the historic Fort Alice.</p>
+        </div>
+        <div class="section">
+            <h2>Modern Developments</h2>
+            <p>Infrastructure: In recent years, the town has seen infrastructure development, including improvements in transportation, healthcare, and education facilities.</p>
+            <p>Government Initiatives: Various government initiatives have been launched to boost economic growth and improve the standard of living for residents.</p>
+            <p>Sri Aman continues to grow and develop, maintaining its cultural heritage while embracing modern advancements.</p>
+        </div>
+    </div>
+    <footer>
+        <p>© We declare that the work in this website was carried out as an assignment in accordance with the regulations of Universiti Teknologi MARA. It is original and is the results of our own work, unless otherwise indicated or acknowledged as referenced work.</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through Sri Aman - History</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+        header {
+            position: relative;
+            height: 60vh;
+            background: url('history header.jfif') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            z-index: 1;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            transition: background 0.3s;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: white;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s;
+        }
+
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .content-container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #444;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>History</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="culture.html">Culture</a>
+            <a href="history.html">History</a>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="section">
+            <h2>Sri Aman's History</h2>
+            <p>Sri Aman has a rich and varied history that spans several centuries. The area around Sri Aman was originally inhabited by various indigenous groups, primarily the Iban people. These groups engaged in traditional activities such as farming, hunting, and fishing.</p>
+            <p>In the mid-19th century, the region came under the influence of the Brooke dynasty, with James Brooke establishing the Kingdom of Sarawak in 1841. Simanggang became an important administrative center for the Brooke regime. It was strategically located along the Batang Lupar River, making it significant for trade and defense. Fort Alice, built in 1864, is one of the most prominent historical landmarks from this era. The fort was named after Charles Brooke's wife, Margaret Alice Lili de Windt, and served as a defensive structure against potential uprisings and pirate attacks.</p>
+            <p>In 1946, after World War II, the Brooke family ceded Sarawak to the British Crown, making it a British colony. During this period, the town continued to develop, with improvements in infrastructure, healthcare, and education. The region also experienced political and social changes, with increasing movements towards self-governance.</p>
+            <p>Sarawak joined the Federation of Malaysia in 1963, becoming one of its states. During the late 1960s and early 1970s, the area was affected by the Communist insurgency, part of the larger communist movements in Southeast Asia. In 1973, a significant peace agreement was signed between the Malaysian government and the North Kalimantan Communist Party. This agreement led to the renaming of Simanggang to Sri Aman, which means "town of peace," to symbolize the end of hostilities.</p>
+            <p>Since the peace declaration, Sri Aman has continued to develop, with significant investments in infrastructure, education, and healthcare. The town has also become a cultural hub, with annual festivals such as Gawai Dayak and the Tidal Bore Festival, celebrating the region's unique natural and cultural heritage. Economic activities in Sri Aman have diversified, with agriculture remaining a cornerstone while tourism and other sectors have grown. Sri Aman's history reflects the broader historical trends in Sarawak, including colonialism, the struggle for independence, and post-independence development. The town's transformation from a colonial outpost to a symbol of peace and development underscores its resilience and cultural richness.</p>
+        </div>
+    </div>
+    <footer>
+        <p>© We declare that the work in this website was carried out as an assignment in accordance with the regulations of Universiti Teknologi MARA. It is original and is the results of our own work, unless otherwise indicated or acknowledged as referenced work.</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+    </footer>
+</body>
+</html>

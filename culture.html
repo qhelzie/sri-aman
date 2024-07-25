@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through Sri Aman - Culture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+        header {
+            position: relative;
+            height: 60vh;
+            background: url('culture header.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            z-index: 1;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            transition: background 0.3s;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: white;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s;
+        }
+
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .content-container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #444;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .section img {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Culture</h1>
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="culture.html">Culture</a>
+            <a href="history.html">History</a>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="section">
+            <h2>Festival and Celebration in Sri Aman</h2>
+            <p>Sri Aman is a town in Sarawak, Malaysia. This city is famous for its rich heritage and culture, representing the amalgamation of native communities and their traditions. Sri Aman is home to various indigenous communities, including the Iban, Malay, Chinese, and Bidayuh. Each community contributes to the cultural tapestry of the region through unique customs, languages, and traditions.</p>
+      
+            <h3>Gawai Dayak</h3>
+            <p>Gawai Dayak is a significant festival celebrated by the Iban and Bidayuh communities in Sarawak, including in Sri Aman. It marks the end of the harvest season and serves as a time for giving thanks for the bountiful harvest. The festival begins on the evening of May 31st and continues into June 1st.</p>
+            <img src="gawai dayak.jfif" alt="Gawai Dayak Celebration">
+            <p><strong>Activities and Traditions:</strong></p>
+            <ul>
+                <li>Miring Ceremony: A ritual to honor and appease the spirits, ensuring blessings for the coming year.</li>
+                <li>Traditional Music and Dance: Performances such as the Ngajat dance, accompanied by the music of traditional instruments like the sape.</li>
+                <li>Feasts: Elaborate meals featuring traditional dishes such as manok pansoh and various rice-based delicacies.</li>
+                <li>Open Houses: Families open their homes to friends and visitors, sharing food, drink, and hospitality.</li>
+                <li>Tuak (Rice Wine): A traditional rice wine brewed for the occasion, often shared among attendees.</li>
+            </ul>
+            <h3>Pesta Benak (Tidal Bore Festival)</h3>
+            <p>Pesta Benak is a unique festival held in Sri Aman to celebrate the natural phenomenon of the tidal bore. This event occurs when the high tide creates a wave that travels upstream against the river's current. Sri Aman is one of the few places in the world where this phenomenon can be observed.</p>
+            <img src="pesta benak.jpg" alt="Pesta Benak Festival">
+            <p><strong>The Tidal Bore Phenomenon:</strong></p>
+            <ul>
+                <li>What is a Tidal Bore?: A tidal bore is a surge of water that travels against the natural current of a river due to the incoming tide. It typically occurs in areas with a narrow and shallow river mouth, where the incoming tide is funneled and creates a noticeable wave.</li>
+                <li>Sri Aman’s Tidal Bore: Known locally as benak, this tidal bore can create waves up to several feet high, attracting both locals and tourists who gather to witness the spectacle.</li>
+            </ul>
+            <p><strong>Festival Activities:</strong></p>
+            <ul>
+                <li>Boat Races: Traditional longboats and modern speedboats compete in races on the Batang Lupar River, riding the tidal bore waves.</li>
+                <li>Cultural Performances: The festival features a variety of cultural performances, including traditional dances, music, and drama that reflect the local heritage.</li>
+                <li>Competitions: Various competitions are held, such as fishing contests, beauty pageants, and traditional games.</li>
+                <li>Food and Craft Stalls: The festival grounds are lined with stalls selling local food, handicrafts, and souvenirs, providing a festive atmosphere.</li>
+            </ul>
+            <h3>Handicrafts in Sri Aman</h3>
+            <p>Sri Aman is renowned for its rich tradition of handicrafts, particularly those created by the Iban community. These artisanal products reflect the deep cultural heritage and artistic skills passed down through generations. Two of the most notable handicrafts from this region are Pua Kumbu and wood carvings.</p>
+            <img src="pua kumbu.jpg" alt="Pua Kumbu">
+            <p>Pua Kumbu is a traditional handwoven textile created by the Iban community. These textiles are known for their intricate patterns and vibrant colors, often incorporating symbolic motifs that hold cultural and spiritual significance. Authentic Pua Kumbu can be found in local markets and specialized craft shops in Sri Aman. The Sarawak Craft Council also promotes and sells these textiles, ensuring the preservation of this traditional art form.</p>
+            <img src="wood carvings.jfif" alt="Wood Carvings">
+            <p>The Iban community is also known for its detailed wood carvings. These carvings are typically made from locally sourced hardwoods and depict a range of subjects, including flora, fauna, and mythological figures. Traditional wood carvings can be purchased from local artisans in Sri Aman, as well as in craft markets and galleries. These carvings make unique souvenirs and are a testament to the skilled craftsmanship of the Iban community.</p>
+            <p>Purchasing these handicrafts not only provides a unique and culturally rich memento but also supports the local artisans and helps preserve these traditional art forms. Visitors to Sri Aman are encouraged to explore the local markets, participate in craft workshops, and engage with the artisans to gain a deeper appreciation of the region’s cultural heritage.</p>
+        </div>
+        <div class="section">
+            <h2>Cuisine in Sri Aman</h2>
+            <p>The cuisine in Sri Aman is a vibrant reflection of its cultural diversity, drawing influences from the indigenous Iban, Malay, and Chinese communities. Here are some detailed descriptions of notable dishes:</p>
+            <h3>Manok Pansoh</h3>
+            <p>Manok Pansoh is a traditional Iban dish where chicken is cooked in bamboo. The preparation involves marinating the chicken with lemongrass, ginger, garlic, and other local herbs, then placing it inside a bamboo tube, which is sealed with leaves and cooked over an open fire. This method imparts a unique, smoky flavor to the chicken, making it tender and aromatic. For an authentic experience, try this dish at local eateries that specialize in traditional Iban cuisine or during cultural festivals and celebrations.</p>
+            <img src="manuk pansuh.jfif" alt="Manok Pansoh">
+            <h3>Laksa Sarawak</h3>
+            <p>Laksa Sarawak is a renowned spicy noodle soup that boasts a rich, flavorful broth made from a blend of sambal belacan (chili paste), sour tamarind, garlic, galangal, lemongrass, and coconut milk. The dish is typically served with rice vermicelli, shredded chicken, prawns, bean sprouts, and a garnishing of fresh coriander and lime. It's a harmonious mix of tangy, spicy, and creamy flavors. The best places to savor Laksa Sarawak in Sri Aman include local coffee shops and food stalls, such as the well-known Kedai Kopi Tian Hua or Warong Kak Nah.</p>
+            <img src="laksa.jfif" alt="Laksa Sarawak">
+            <h3>Kuih-Muih</h3>
+            <p>Kuih-muih encompasses a variety of traditional Malay and Chinese pastries and sweets. Some popular types include:</p>
+            <ul>
+                <li>Kuih Lapis: A colorful, layered cake made from rice flour, coconut milk, and sugar.</li>
+                <li>Kuih Seri Muka: A two-layered dessert with a base of glutinous rice topped with a custard layer made from coconut milk and pandan juice.</li>
+                <li>Kuih Cincin: A ring-shaped fried pastry coated with brown sugar.</li>
+            </ul>
+            <p>These delicacies are often enjoyed during tea time or festive occasions. For the best kuih-muih, visit local markets such as the Sri Aman Wet Market or small bakeries and stalls like Kedai Kuih Muih Sri Aman.</p>
+            <img src="kuih.jfif" alt="Kuih-Muih">
+            <h3>Recommendations for Places to Eat</h3>
+            <p><strong>Restoran Sederhana (Tandang Sari):</strong> Known for its wide array of traditional Malay and Iban dishes, including Manok Pansoh and various types of kuih-muih.</p>
+            <p><strong>Kedai Kopi Tian Hua (Chung Hua Food Court):</strong> A popular spot for Laksa Sarawak and other local favorites. It's a great place to experience the local coffee shop culture.</p>
+            <p><strong>Warong Kak Nah (Selera Melaya Cafe):</strong> Famous for its authentic Malay cuisine and kuih-muih, offering a cozy atmosphere and delicious traditional treats.</p>
+            <p><strong>Sri Aman Wet Market:</strong> Ideal for exploring a variety of local foods, including fresh produce, cooked dishes, and traditional snacks. It provides a bustling and authentic experience of the local culinary scene.</p>
+            <img src="wet market.jpg" alt="Sri Aman Wet Market">
+            <p>These places not only serve delicious food but also offer a glimpse into the rich culinary traditions of Sri Aman.</p>
+        </div>
+    </div>
+    <footer>
+        <p>© We declare that the work in this website was carried out as an assignment in accordance with the regulations of Universiti Teknologi MARA. It is original and is the results of our own work, unless otherwise indicated or acknowledged as referenced work.</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+    </footer>
+</body>
+</html>

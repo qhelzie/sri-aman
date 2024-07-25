@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through Sri Aman - Destinations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<header>
+    <video autoplay muted loop id="background-video">
+        <source src="destinations-header.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+        <h1>Destinations</h1>
+    </div>
+</header>
+
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+header {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+}
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            z-index: 1;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            transition: background 0.3s;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: white;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s;
+        }
+
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .content-container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #444;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .section img {
+            width: 80%;
+            height: 200
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="culture.html">Culture</a>
+            <a href="history.html">History</a>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="section">
+            <h2>Interesting Places in Sri Aman</h2>
+            <p>Sri Aman is a district in Sarawak, Malaysia, and it's a treasure trove of natural and cultural wonders. One of the most fascinating places to visit is the Sri Aman Longhouse, a traditional Iban longhouse that showcases the rich culture and traditions of the Iban people. The longhouse is situated amidst lush rainforest and offers breathtaking views of the surrounding landscape. Visitors can explore the longhouse, learn about the Iban way of life, and even participate in traditional activities such as making blowpipes and basket-weaving.</p>
+            <img src="longhouse.jfif" alt="Sri Aman Longhouse">
+            <p>The Sri Aman Tidal Bore, known locally as "Benak," is another unique attraction. This natural phenomenon occurs along the Batang Lupar River, where the tidal bore creates waves that can travel several kilometers upriver. The Tidal Bore Festival is held annually, attracting both locals and tourists to witness this spectacular event and participate in various cultural and recreational activities.</p>
+            <img src="tidal bore.jpg" alt="Sri Aman Tidal Bore">
+           <h2>Location</h2>
+            <p>Sri Aman is located in the east of Malaysia which is in Sarawak in the land of Borneo. It is a small town located in the Upper Rejang Division of Sarawak, Malaysia. Simanggang is a town and the capital of Sri Aman District and Sri Aman Division in Sarawak. It is located near the Lupar River, 193 kilometres (120 mi), a three-hour drive, from Kuching, the capital of Sarawak. The town is nestled in the heart of the Borneo rainforest and is accessible only by road or river. The nearest airport is in Sibu, which is a 2-hour drive away. The specific coordinates of Sri Aman is 1°14′7″N 111°28′11″E in the world map. The town is surrounded by lush forests and rolling hills, making it a popular destination for outdoor enthusiasts who love hiking, trekking, and camping.</p>
+           <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510583.6566197349!2d111.10288765736681!3d1.205793946588162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31f93a7f130997c7%3A0xbe050e1b2f4b823d!2sSimanggang%2C%20Sarawak!5e0!3m2!1sen!2smy!4v1721671069882!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        </div>
+    </div>
+    <footer>
+        <p>© We declare that the work in this website was carried out as an assignment in accordance with the regulations of Universiti Teknologi MARA. It is original and is the results of our own work, unless otherwise indicated or acknowledged as referenced work.</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+    </footer>
+</body>
+</html>
